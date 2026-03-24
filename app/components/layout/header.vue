@@ -3,10 +3,23 @@
         <!-- logo and burger menu -->
         <div class="gap-2 items-center relative flex">
             <div class="flex sm:hidden">
-                 <button @click="toggleMenu" class="" >
+                <!-- TODO: fix the outside click when click on burger button -->
+                <button @click.stop="toggleMenu" ref="burger">
                     <Icon name="material-symbols:menu-rounded" />
                 </button>
-                
+                <BaseDropdownMenu v-model="showMenu" :ignore-el="burger">
+                    <ul class="p-2 space-y-4">
+                        <li v-for="page in pages" :key="page.name">
+                            <NuxtLink 
+                                @click="showMenu = false" 
+                                :to="page.link"
+                                class="px-6 hover:bg-gray-50 text-center"
+                            >
+                                {{ page.name }}
+                            </NuxtLink>
+                        </li>
+                    </ul>
+                </BaseDropdownMenu>
             </div>
             <NuxtLink to="/">
                 <h2 class="sm:text-xl font-header italic">Editorial Gastronomy</h2>
@@ -43,6 +56,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const showMenu = ref(false);
+const burger = ref(null);
 
 const pages = [
     { name: 'home', link :'/'},
@@ -50,7 +64,7 @@ const pages = [
     { name: 'about', link :'/about'},
 ] 
 
-const toggleMenu : ()=>void = ()=>{
+const toggleMenu = ()=>{
     showMenu.value = !showMenu.value
 }
 </script>
