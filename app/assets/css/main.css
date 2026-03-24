@@ -3,7 +3,18 @@
 @theme{
     --font-primary : "Manrope", sans-serif;
     --font-header : "Newsreader", serif;
-
+    --color-primary-50: #fdf2f8;
+    --color-primary-50: #fcf6f4;   /* Lightest tinted white */
+    --color-primary-100: #f7e9e4;  /* Soft blush / Backgrounds */
+    --color-primary-200: #efd0c8;  /* Muted pastel */
+    --color-primary-300: #e4ad9f;  /* Light accent */
+    --color-primary-400: #d47f69;  /* Soft secondary */
+    --color-primary-500: #C0573E;  /* YOUR BASE PRIMARY */
+    --color-primary-600: #ac4a33;  /* Hover state */
+    --color-primary-700: #8f3d2a;  /* Darker accent */
+    --color-primary-800: #733223;  /* Deep contrast */
+    --color-primary-900: #5e2a1e;  /* Text-level dark */
+    --color-primary-950: #33150e;  /* Near black */
     --color-primary: #C0573E;
     --color-secondary: #6B8E23;
     --color-tertiary : #D08581;
