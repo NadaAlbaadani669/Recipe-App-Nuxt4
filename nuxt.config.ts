@@ -26,6 +26,8 @@ export default defineNuxtConfig({
   googleFonts:{
     families:{
       Montserrat: true,
+      Newsreader : true,
+      Manrope: true,
     }
   }
 })

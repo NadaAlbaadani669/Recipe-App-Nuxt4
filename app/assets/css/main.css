@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
 @theme{
-    --font-montserrat : "Montserrat";
+    --font-primary : "Manrope", sans-serif;
+    --font-header : "Newsreader", serif;
+
+    --color-primary: #C0573E;
+    --color-secondary: #6B8E23;
+    --color-tertiary : #D08581;
+    --color-neutral : #333333;
 }
