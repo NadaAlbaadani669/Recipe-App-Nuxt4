@@ -17,5 +17,15 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ['@pinia/nuxt'],
+  modules: [
+    '@pinia/nuxt',
+    '@nuxtjs/google-fonts',
+    '@nuxt/icon',
+    '@nuxt/image',
+  ],
+  googleFonts:{
+    families:{
+      Montserrat: true,
+    }
+  }
 })
