@@ -1,5 +1,5 @@
 <template>
-    <div class="sticky top-0 shadow flex justify-between items-center p-4 bg-gray-100">
+    <div class="sticky top-0 z-50 shadow flex justify-between items-center p-4 bg-neutral-100">
         <!-- logo and burger menu -->
         <div class="gap-2 items-center relative flex">
             <div class="flex sm:hidden">

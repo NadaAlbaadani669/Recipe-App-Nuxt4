@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-primary-100 p-6">
+    <section class="p-6 bg-neutral-100">
         <h3 class="text-xl font-header text-shadow-2xs">
             Most Favorite Recipes
         </h3>

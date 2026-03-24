@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-primary-50 p-2">
+    <section class="bg-primary-100 sm:p-2 ">
         <!-- big devices -->
         <div class="hidden sm:flex px-12 lg:px-32 py-14 justify-between items-center max-w-7xl mx-auto ">
             <div class="space-y-10 w-1/2 flex flex-col items-start ">
@@ -14,7 +14,7 @@
                 </p>
                 <div class="flex justify-between gap-8 font-primary">
                    <NuxtLink to="/recipes" class="hero-btn bg-primary text-white">browse all recipes</NuxtLink>
-                    <button class="hero-btn bg-neutral-200 text-neutral">today's special</button>
+                    <button class="hero-btn bg-neutral-100 text-neutral">today's special</button>
                 </div>
 
             </div>
@@ -22,9 +22,10 @@
                 <nuxtImg src="/images/hero.png" format="webp" sizes="654px" densities="x1" />
             </div>
         </div>
+        <!-- small screen -->
         <div class="flex sm:hidden justify-center items-center">
             <div 
-                class="relative h-90 bg-center rounded-xl w-85.5 bg-cover bg-no-repeat overflow-hidden" 
+                class="relative h-90 bg-center w-full bg-cover bg-no-repeat overflow-hidden" 
                 :style="{ backgroundImage: 'url(/images/hero2.png)' }"
             >
                <div class="absolute top-6 space-y-6 left-6">
