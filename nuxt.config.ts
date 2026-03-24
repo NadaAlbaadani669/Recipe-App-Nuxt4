@@ -2,14 +2,18 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   css:['@/assets/css/main.css'],
 
   alias:{
-    'assets': '<rootDir>/assets'
+    'assets': '<rootDir>/assets',
+    'types' : '<rootDir>/types',
   },
   pinia: {
     storesDirs: ['./stores/**', './custom-folder/stores/**'],
+  },
+  image:{
+    domains : ['https://dummyjson.com']
   },
   vite: {
     plugins: [

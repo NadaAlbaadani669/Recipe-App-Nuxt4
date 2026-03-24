@@ -1,8 +1,8 @@
 <template>
     <section class="bg-primary-50 p-2">
         <!-- big devices -->
-        <div class="hidden sm:flex px-12 lg:px-32 py-14 justify-between items-center max-w-7xl mx-auto">
-            <div class="space-y-10 w-1/2 flex flex-col items-start">
+        <div class="hidden sm:flex px-12 lg:px-32 py-14 justify-between items-center max-w-7xl mx-auto ">
+            <div class="space-y-10 w-1/2 flex flex-col items-start ">
                 <h2 class="text-5xl italic font-header">
                     Discover your 
                     <br><span class="text-primary">next favorite</span>

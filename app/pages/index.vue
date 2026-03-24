@@ -1,3 +1,4 @@
 <template>
     <HomeHero />
+    <RecipesFavorite />
 </template>

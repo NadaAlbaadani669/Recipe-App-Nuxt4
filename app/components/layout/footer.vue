@@ -9,7 +9,7 @@
         <div class="space-y-3">
             <h4 class="text-primary font-header">Explore</h4>
             <ul class="space-y-2">
-                <li v-for="page in explorePages" :key="page.name" class="text-sm">
+                <li v-for="page in explorePages" :key="page.name" class="text-sm hover:text-primary">
                     <NuxtLink :to="page.link">{{ page.name }}</NuxtLink>
                 </li>
             </ul>
@@ -18,7 +18,7 @@
             <div>
                 <h4 class="text-primary font-header">Follow us</h4>
                 <ul class="space-y-2 text-neutral flex mt-3 gap-4">
-                    <li v-for="social in socialMedia" :key="social.icon" external class="text-lg">
+                    <li v-for="social in socialMedia" :key="social.icon" external class="text-lg hover:text-primary">
                         <NuxtLink :to="social.link">
                             <Icon :name="social.icon" />
                         </NuxtLink>
