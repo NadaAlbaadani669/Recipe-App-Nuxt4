@@ -11,7 +11,7 @@
             </NuxtLink>
         </div>
         <!-- recipes list -->
-        <div class="fav-recipes mt-2 grid grid-col-1 sm:grid-col-2 md:grid-cols-3 gap-6">
+        <div class="fav-recipes mt-2 grid grid-col-1 sm:grid-col-2 md:grid-cols-3 gap-14">
            <div v-for="recipe in data?.recipes" :key="recipe.id">
             <RecipesCard :recipe="recipe" />
            </div>

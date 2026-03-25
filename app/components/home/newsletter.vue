@@ -9,7 +9,7 @@
           Sign up for our weekly editorial newsletter curated recipes ,<br> kitchen secrets, and seasonal inspiration delivered to your<br> inbox .
         </p>
         <div class="flex flex-col sm:flex-row p-4 gap-2 font-primary justify-center">
-          <input type="text" class="input" placeholder="Email">
+          <input type="text" class="input w-64 shadow" placeholder="Email">
           <button class="hero-btn bg-primary text-white capitalize">subscribe</button>
         </div>
       </div>

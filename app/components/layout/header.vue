@@ -5,7 +5,7 @@
             <div class="flex sm:hidden">
                 <!-- TODO: fix the outside click when click on burger button -->
                 <button @click.stop="toggleMenu" ref="burger">
-                    <Icon name="material-symbols:menu-rounded" />
+                    <Icon name="mdi:menu" />
                 </button>
                 <BaseDropdownMenu v-model="showMenu" :ignore-el="burger">
                     <ul class="p-2 space-y-4">
@@ -44,10 +44,10 @@
         <!-- actions -->
         <div class="flex gap-2 sm:gap-4 items-center text-primary font-semibold sm:text-xl">
             <button class="hover:cursor-pointer">
-                <Icon name="material-symbols:search-rounded"/>
+                <Icon name="mdi:search"/>
             </button>
             <button class="hover:cursor-pointer">
-                <Icon name="gg:profile" />
+                <Icon name="mdi:person-circle-outline" />
             </button>
         </div>
     </div>

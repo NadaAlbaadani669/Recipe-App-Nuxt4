@@ -1,7 +1,5 @@
 <template>
-  <div>
-    recipes page
-  </div>
+  <RecipesHero />
 </template>
 
 <script lang="ts" setup>
