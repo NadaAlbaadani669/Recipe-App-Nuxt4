@@ -11,18 +11,28 @@
             </NuxtLink>
         </div>
         <!-- recipes list -->
-        <div class="fav-recipes mt-2 grid grid-col-1 sm:grid-col-2 md:grid-cols-3 gap-14">
-           <div v-for="recipe in data?.recipes" :key="recipe.id">
-            <RecipesCard :recipe="recipe" />
-           </div>
-
+        
+        <div v-if="pending">
+            <SharedLoading />
         </div>
+        <div v-else>
+            <div v-if="error">
+                Something went wrong 
+                <button @click="refreshFavorites()" class="hero-btn bg-primary text-white mt-4">Refresh</button>
+            </div>
+            <div v-else="favRecipes" class="fav-recipes mt-2 grid grid-col-1 sm:grid-col-2 md:grid-cols-4 gap-14">
+                <RecipesCard v-for="recipe in favRecipes" :key="recipe.id" :recipe="recipe" />
+            </div>
+        </div>
+        
+
+        
     </section>
 </template>
 
 <script setup lang="ts">
-import { type RecipesResponse } from '@/types/types';
-const { data ,error } = await useFetch<RecipesResponse>('https://dummyjson.com/recipes?limit=6');
+
+const { pending , favRecipes, error, refreshFavorites } = await useRecipe();
 
 
 </script>

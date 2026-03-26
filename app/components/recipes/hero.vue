@@ -20,7 +20,7 @@
         <Icon name="mdi-light:chevron-down" />
       </button>
       <button class="hero-btn bg-neutral-100 justify-center">
-        Rating
+        Tags
         <Icon name="mdi-light:chevron-down" />
       </button>
       <button class="hero-btn bg-neutral-100 justify-center">

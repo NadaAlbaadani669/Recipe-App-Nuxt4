@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   alias:{
     'assets': '<rootDir>/assets',
     'types' : '<rootDir>/types',
+    'stores' : '<rootDir>/stores',
   },
   pinia: {
     storesDirs: ['./stores/**', './custom-folder/stores/**'],
