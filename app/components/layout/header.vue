@@ -33,7 +33,9 @@
                     <NuxtLink 
                         :to="page.link" 
                         class="py-1 "
-                        :class="{'text-primary border-b-2 border-b-primary' : route.path === page.link}"
+                        :class="{'text-primary border-b-2 border-b-primary' : 
+                            page.link === '/' ? route.path === '/' :route.path.startsWith(page.link) 
+                        }"
                     >
                         {{ page.name }}
                     </NuxtLink>

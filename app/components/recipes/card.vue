@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="link" class="space-y-1 cursor-pointer hover:scale-105"> 
+  <NuxtLink :to="`/recipes/${recipe.id}`" class="block space-y-1 cursor-pointer hover:scale-105"> 
     <div class="rounded-lg overflow-hidden">
       <NuxtImg :src="recipe.image" densities="x1" format="webp" sizes="xs:100vw sm:50vw lg:360px" />
     </div>
